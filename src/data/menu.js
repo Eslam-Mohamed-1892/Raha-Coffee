@@ -3,7 +3,7 @@ import dblEspresso from '../assets/images/menu/dblEspresso.avif'
 import americano from '../assets/images/menu/americano.webp'
 import cappuccino from '../assets/images/menu/cappuccino.webp'
 import caffeLatte from '../assets/images/menu/caffeLatte.webp'
-import flatWhite from '../assets/images/menu/flatWhite.webp'
+// import flatWhite from '../assets/images/menu/flatWhite.webp'
 import cortado from '../assets/images/menu/cortado.webp'
 import macchiato from '../assets/images/menu/macchiato.webp'
 import mocha from '../assets/images/menu/mocha.jpg'
@@ -75,17 +75,17 @@ export const drinks = [
         description: "Smooth espresso with steamed milk and a silky finish.",
         descriptionAr: "إسبريسو ناعم مع حليب مبخر وقوام حريري.",
     },
-    {
-        id: 6,
-        name: "Flat White",
-        nameAr: "فلات وايت",
-        category: "Hot Coffee",
-        categoryAr: "قهوة ساخنة",
-        price: 90,
-        image: flatWhite,
-        description: "Rich espresso combined with smooth microfoam milk.",
-        descriptionAr: "إسبريسو غني مع حليب ناعم بطبقة خفيفة من الرغوة.",
-    },
+    // {
+    //     id: 6,
+    //     name: "Flat White",
+    //     nameAr: "فلات وايت",
+    //     category: "Hot Coffee",
+    //     categoryAr: "قهوة ساخنة",
+    //     price: 90,
+    //     image: flatWhite,
+    //     description: "Rich espresso combined with smooth microfoam milk.",
+    //     descriptionAr: "إسبريسو غني مع حليب ناعم بطبقة خفيفة من الرغوة.",
+    // },
     {
         id: 7,
         name: "Cortado",
