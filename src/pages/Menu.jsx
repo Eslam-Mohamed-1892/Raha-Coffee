@@ -23,7 +23,7 @@ export default function Menu({ language }) {
   };
 
   return (
-    <main className="bg-[#F8F3EA] min-h-screen pt-28 pb-20 items-center">
+    <main className="bg-[#F8F3EA] min-h-screen pt-28 pb-20 items-center font-arabic">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
 
         {/* Heading */}
@@ -44,7 +44,7 @@ export default function Menu({ language }) {
               <button
                 key={category.en}
                 onClick={() => setActiveCategory(category.en)}
-                className={`px-4 py-2 rounded-md text-sm ${activeCategory === category.en
+                className={`px-4 py-2 rounded-md cursor-pointer text-sm ${activeCategory === category.en
                   ? "bg-[#5A3825] text-white"
                   : "bg-white text-[#5A3825]"
                   }`}
@@ -83,7 +83,7 @@ export default function Menu({ language }) {
                 </p>
 
                 <button onClick={() => handleOrder(drink)}
-                  className="bg-[#5A3825] text-white text-sm px-5 py-2.5 rounded-md mt-auto self-start">
+                  className="bg-[#5A3825] text-white cursor-pointer text-sm px-5 py-2.5 rounded-md mt-auto self-start">
                   {isArabic ? "اطلب الآن" : "Order Now"}
                 </button>
 

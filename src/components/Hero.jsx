@@ -5,7 +5,7 @@ export default function Hero({ language }) {
   const isArabic = language === "ar";
 
   return (
-    <section className="relative min-h-[calc(100vh-72px)] overflow-hidden mt-16 md:mt-20">
+    <section className="relative min-h-[calc(100vh-72px)] overflow-hidden mt-16 md:mt-20 font-arabic">
       
       <picture className="absolute inset-0">
         <source media="(max-width: 1024px)" srcSet={hero1} />

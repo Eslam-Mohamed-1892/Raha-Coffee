@@ -7,8 +7,7 @@ export default function Header({ language }) {
     const isArabic = language === "ar";
 
     const navLinkClass = ({ isActive }) =>
-        `text-sm ${
-            isActive ? "text-[#E6CFA8]" : "text-white"
+        `text-sm ${isActive ? "text-[#E6CFA8]" : "text-white"
         }`;
 
     const closeMenu = () => {
@@ -16,7 +15,7 @@ export default function Header({ language }) {
     };
 
     return (
-        <header className="bg-[#5A3825] text-white fixed top-0 right-0 left-0 z-20 h-16 md:h-20">
+        <header className="bg-[#5A3825] text-white fixed top-0 right-0 left-0 z-20 h-16 md:h-20 font-arabic">
             <div className="max-w-6xl mx-auto px-4 md:px-8 py-4 md:py-5 flex items-center justify-between">
                 {/* Logo */}
                 <NavLink
@@ -24,9 +23,15 @@ export default function Header({ language }) {
                     onClick={closeMenu}
                     className="flex items-center gap-2 text-xl"
                 >
-                    <span>راحة</span>
-                    <span>|</span>
-                    <span>RAHA</span>
+                    <span className="font-raha text-2xl">
+                        راحة
+                    </span>
+
+                    <span className="inline-block h-6 w-px bg-white/60"></span>
+
+                    <span className="font-inter text-lg tracking-wide">
+                        RAHA
+                    </span>
                 </NavLink>
 
                 {/* Desktop Navigation */}
@@ -60,7 +65,7 @@ export default function Header({ language }) {
 
             {/* Mobile Navigation */}
             {isMenuOpen && (
-                <nav className="md:hidden border-t border-white/10 px-4 py-4">
+                <nav className="md:hidden border-t border-white/10 bg-[#5A3825] px-4 py-4">
                     <div className="flex flex-col items-center gap-5">
                         <NavLink
                             to="/"

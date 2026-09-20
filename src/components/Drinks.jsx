@@ -29,7 +29,7 @@ export default function Drinks({ language }) {
     ];
 
     return (
-        <section className="bg-[#F7F1E8] py-16">
+        <section className="bg-[#F7F1E8] py-16 font-arabic">
             <div className="max-w-6xl mx-auto px-4">
 
                 <div className="text-center mb-10">

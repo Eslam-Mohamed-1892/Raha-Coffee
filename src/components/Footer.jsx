@@ -2,14 +2,20 @@ export default function Footer({ language }) {
   const isArabic = language === "ar";
 
   return (
-    <footer className="bg-[#5A3825] text-white mt-16 md:mt-20">
+    <footer className="bg-[#5A3825] text-white mt-16 md:mt-20 font-arabic">
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          
-          <div className="text-lg cursor-pointer">
-            <span>راحة</span>
-            <span className="mx-2">|</span>
-            <span>RAHA</span>
+
+          <div className="flex items-center gap-2 cursor-pointer text-xl">
+            <span className="font-raha text-2xl leading-none">
+              راحة
+            </span>
+
+            <span className="h-6 w-px bg-white/60"></span>
+
+            <span className="font-inter text-lg leading-none tracking-wide">
+              RAHA
+            </span>
           </div>
 
           <p className="text-sm text-white/80">
