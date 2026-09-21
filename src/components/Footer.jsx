@@ -6,7 +6,7 @@ export default function Footer({ language }) {
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
 
-          <div className="flex items-center gap-2 cursor-pointer text-xl">
+          <div dir="rtl" className="flex items-center gap-2 cursor-pointer text-xl">
             <span className="font-raha text-2xl leading-none">
               راحة
             </span>

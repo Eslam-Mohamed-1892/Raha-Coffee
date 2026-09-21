@@ -60,6 +60,7 @@ ${formData.message}
       icon: <FaPhone />,
       title: isArabic ? "الهاتف" : "Phone",
       value: "+20 1050838177",
+      href: "tel:+201050838177"
     },
     {
       icon: <FaEnvelope />,
@@ -123,9 +124,12 @@ ${formData.message}
                     {item.title}
                   </h3>
 
-                  <p className="text-sm leading-6 text-[#6F6259]">
+                  <a
+                    href={item.href}
+                    className="text-sm leading-6 text-[#6F6259]"
+                  >
                     {item.value}
-                  </p>
+                  </a>
                 </div>
               ))}
             </div>
